@@ -2,8 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, 
-        initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Dean's Website</title>
         <link rel="stylesheet" href="styles.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
@@ -31,35 +30,52 @@
                     <li class="navigationBar__item">
                         <a href="Contact.html" class="navigationBar__links"> Contact </a>
                     </li>
-               
                 </ul>
             </div>
         </nav>
 
 <!-- Hero Section -->
-        <div id="particles-js"></div>
-        <section class="back-wrapper contact-wrapper">
-            <h1>
-                <span>Contact Me</span>
-            </h1>
-            <form id="contact-form">
-                <div class="input-wrapper">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="input-wrapper">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="input-wrapper">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
-            <p id="success-message" style="display: none;">Thank you for reaching out!</p>
-        </section>
+        <div id="particles-js"></div> 
+        <div class="main__back">
+            <div class="main__content-and-globe">
+                <div class="main__content">
+                    <h1>Full Stack</h1>
+                    <h2>Developer</h2>
+                    <p>Welcome! I am an aspiring Software Engineer that loves to code</p>
+                    <a href ="/About.html"> <button class = "main__btn">Learn More</button></a>                   
+                    <a href="images/resume.pdf" download="Dean-Nunis-Resume">
+                        <button class = "main__btn2">Download CV</button>
+                    </a>
 
+                </div>
+                <div id="globe-container">
+                </div> 
+            </div>
+        </div>
+  
+<!-- Section -->
+        <div class = "services">
+            <h1>See what seperates me from other developers</h1>
+            <div class = "services__container">
+                <div class = "services__card">
+                    <h2>TalkTelligent</h2>
+                    <p>Question Recognition AI</p>
+                    <a href ="/Portfolio.html" target="_blank"><button>View Project</button></a>
+                </div>
+                <div class = "services__card">
+                    <h2>Crypto Checker</h2>
+                    <p>Analyze a Cryptocurrency Safely</p>
+                    <a href ="/Portfolio.html" target="_blank"><button>View Project</button></a>
+                </div>
+                <div class = "services__card">
+                    <h2>Panther Buddy</h2>
+                    <p>Chapman Mental Health App</p>
+                    <a href ="/Portfolio.html" target="_blank"><button>View Project</button></a>
+                </div>
+                </div>
+            <a href = "/Portfolio.html" target =_blank><button>View Portfolio</button></a>
+            </div>
+        </div>
 
 <!-- Footer Section -->
         <div class = "footer__container">
@@ -67,28 +83,28 @@
                 <div class = "footer__link--wrapper">
                     <div class = "footer__link--items">
                         <h2>Home</h2>
-                        <a href ="index.html">Home</a>
+                        <a href ="/index.html">Home</a>
                     </div>
                     <div class = "footer__link--items">
                         <h2>About</h2>
-                        <a href ="About.html">About Me</a>
+                        <a href ="/About.html">About Me</a>
                     </div>
                 </div>
                 <div class = "footer__link--wrapper">
                     <div class = "footer__link--items">
                         <h2>Portfolio</h2>
-                        <a href ="Portfolio.html">View Portfolio</a>
+                        <a href ="/Portfolio.html">View Portfolio</a>
                     </div>
                     <div class = "footer__link--items">
                         <h2>Contact</h2>
-                        <a href ="Contact.html">Conatct Me</a>
+                        <a href ="/Contact.html">Conatct Me</a>
                     </div>
                 </div>
             </div>
             <div class="social__media">
                 <div class="social__media--wrap">
                     <div class="footer__logo">
-                    <a href="index.html" id = "footer__logo"><i class="fas fa-laptop-code"></i>Dean Nunis</a>
+                    <a href="/index.html" id = "footer__logo"><i class="fas fa-laptop-code"></i>Dean Nunis</a>
                     </div>
                     <p class="wesbite__rights">© DEAN NUNIS 2023. ALL RIGHTS RESERVED</p>
                     <div class="social__icons">
@@ -102,12 +118,9 @@
                 </div>
             </div>
         </div>
-    </div>
         <script src="particles.js"></script>
         <script src ="app.js"></script>
-        <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-        <script type="text/javascript">
-        (function(){emailjs.init("Mu5DxxTyK2zk-lNJs");})();
-</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
     </body>
 </html>
